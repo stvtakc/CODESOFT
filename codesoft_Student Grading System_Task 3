@@ -1,0 +1,31 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int array[5],i,n,sum,avg;
+    int arr1[5];
+    string name;
+    cout<<"enter your name\n";
+    cin>>name;
+    for(i=1;i<=5;i++)
+    {
+        cout<<"enter"<<i<<"subject marks";
+        cin>>array[i];
+    }
+    sort(array,array+5);
+    cout<<"minimum:"<<array[1]<<endl;
+    cout<<"maximum:"<<array[5]<<"\n";
+   
+    for(i=1;i<=5;i++)
+    { 
+      sum=sum+array[i];
+      avg=(sum)/5;
+      
+    }
+    cout<<"The sum of marks are"<<sum<<"\n";
+    cout<<"The average marks are"<<avg;
+    
+    return 0;
+}

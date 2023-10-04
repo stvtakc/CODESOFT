@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{   int num1,num2,operation;
+    cout<<"enter your first number";
+    cin>>num1;
+    cout<<"enter your second number";
+    cin>>num2;
+    cout<<"enter 1 to add numbers"<<"\n";
+    cout<<"enter 2 to subtract numbers"<<"\n";
+    cout<<"enter 3 to multiply number"<<"\n";
+    cout<<"enter 4 to divide numbers"<<"\n";
+    cin>>operation;
+    switch(operation){
+    case 1 :
+    cout<<"The sum of your numbers are"<<num1+num2;
+     break;
+     case 2:
+     cout<<"The subtraction of your numbers are"<<num1-num2;
+     break;
+     case 3:
+     cout<<"The multiplaction of your numbers are"<<num1*num2;
+     break;
+     case 4:
+     cout<<"The division of your numbers are"<<num1/num2;
+     break;
+    }
+    return 0;
+}
